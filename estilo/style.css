@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #0A1128;
+    --cor2: #ffffff;
+    --gap: 3rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Open Sans", sans-serif;
+*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: var(--cor1);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 5.5rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 4.5rem;
+}
+
+h5{
+    font-size: 4rem;
+}
+
+h6{
+    font-size: 3.5rem;
+}
+
+.fundo-confetti{
+    background-image: url(../imagens/main.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--cor2);
+}
+
+.fundo-branco{
+    background: var(--cor2);
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: var(--gap);
+}
+
+.section{
+    min-height: 100vh;
+}
