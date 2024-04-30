@@ -353,3 +353,24 @@ body .full-width{
     margin: 0;
     padding: 3rem;
 }
+
+.close-menu{
+    display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--cor2);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--cor1);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--cor1);
+    font-size: 30px;
+}
