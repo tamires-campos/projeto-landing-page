@@ -4,13 +4,14 @@
     --cor1: #0A1128;
     --cor2: #ffffff;
     --cor3: #d8d8d8;
-    --cor4: crimson;
+    --cor4: #dc143c;
     --gap: 3rem;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /*
@@ -124,6 +125,11 @@ tfoot td, table th{
     height: 65px;
 }
 
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
 .menu{
     background: var(--cor2);
     position: fixed;
@@ -212,7 +218,7 @@ tfoot td, table th{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -273,4 +279,77 @@ tfoot td, table th{
 
 .contact-form{
     grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: var(--cor2);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    box-shadow: 0 0 10px 2px  var(--cor4);
+}
+
+.form-group button{
+    border: 0.5rem solid var(--cor2);
+    background: none;
+    color: var(--cor2);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background: var(--cor2);
+    color: var(--cor1)
+}
+
+.form-group ::placeholder{
+    color: rgba(128, 128, 128, 0.616);
+}
+
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a{
+    color: var(--cor1);
+}
+
+.heart{
+    color: var(--cor4);
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;
 }

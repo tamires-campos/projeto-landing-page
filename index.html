@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
 </head>
-<body class="fundo-confetti">
+<body>
     <aside class="menu fundo-branco">
         <div class="main-content menu-content">
             <h1><a href="#home">LOGO</a></h1>
@@ -194,15 +194,41 @@
             </div>
 
             <div class="contact-form">
-                <fieldset>
+
+                <fieldset class="form-grid">
                     <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="ifirst-name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="ilast-name" placeholder="Your Last Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-name">E-mail</label>
+                        <input type="email" name="email-name" id="iemail-name" placeholder="Your E-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="imessage" placeholder="Your Message" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
                 </fieldset>
+
             </div>
-
-
         </div>
-
-        
     </section>
+
+    <footer id="footer" class="footer fundo-branco">
+        <p><a href="https://tamires-campos.github.io/projeto-social/" target="_blank">Feito com <span class="heart">❤</span> por Tamires C. Pletti</a></p>
+    </footer>
 </body>
 </html>
