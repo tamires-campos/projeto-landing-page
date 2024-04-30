@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media (max-width: 800px) {
+
+    h2{
+        font-size: 4rem;
+    }
+
     .intro-content, .grid{
         grid-template-columns: 1fr;
     }
@@ -64,6 +69,10 @@
     }
 
     .menu-spacing{
+        display: none;
+    }
+
+    .contact-img{
         display: none;
     }
 }
